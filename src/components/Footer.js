@@ -30,7 +30,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-column footer-about">
           <div className="footer-logo">
-            <img src="/images/logo.png" alt="CSDEL Logo" />
+            <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="CSDEL Logo" />
           </div>
           <p className="footer-description">
             <strong>CSDEL - Council for Sustainability, Development Environment and Livelihood</strong> drives impact through purpose, equity, and action, uniting experts and volunteers to transform our planet.

@@ -32,7 +32,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <img src="/images/logo.png" alt="CSDEL Logo" />
+          <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="CSDEL Logo" />
         </div>
         
         <button 
