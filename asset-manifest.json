@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/csdel/static/css/main.0104eb78.css",
+    "main.js": "/csdel/static/js/main.1c7f1807.js",
+    "index.html": "/csdel/index.html",
+    "main.0104eb78.css.map": "/csdel/static/css/main.0104eb78.css.map",
+    "main.1c7f1807.js.map": "/csdel/static/js/main.1c7f1807.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0104eb78.css",
+    "static/js/main.1c7f1807.js"
+  ]
+}
