@@ -1,0 +1,111 @@
+.our-partners-section {
+  padding: 5rem 4rem;
+  background-color: #ececdc;
+}
+
+.partners-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.partners-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #343f1e;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.5px;
+}
+
+.partners-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.partners-track {
+  display: flex;
+  animation: slideLeft 40s linear infinite;
+  width: fit-content;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partner-logo {
+  flex-shrink: 0;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover img {
+  transform: scale(1.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partner-logo {
+    padding: 0 3rem;
+  }
+
+  .partner-logo img {
+    height: 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-partners-section {
+    padding: 3rem 1rem;
+  }
+
+  .partners-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .partner-logo {
+    padding: 0 2rem;
+  }
+
+  .partner-logo img {
+    height: 75px;
+  }
+
+  .partners-track {
+    animation: slideLeft 30s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-title {
+    font-size: 2rem;
+  }
+
+  .partner-logo {
+    padding: 0 1.5rem;
+  }
+
+  .partner-logo img {
+    height: 65px;
+  }
+}

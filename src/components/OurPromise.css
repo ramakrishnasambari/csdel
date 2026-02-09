@@ -1,0 +1,163 @@
+.our-promise {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.promise-overlay {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-color: rgba(52, 63, 30, 0.9);
+  padding: 5rem 4rem;
+}
+
+.promise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.promise-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.promise-text {
+  padding-right: 2rem;
+}
+
+.promise-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #e3e9d8;
+}
+
+.promise-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.promise-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  line-height: 1.7;
+}
+
+.promise-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promise-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.promise-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #e3e9d8;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.promise-image {
+  width: 100%;
+}
+
+.promise-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .promise-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-promise {
+    background-attachment: scroll;
+  }
+
+  .promise-overlay {
+    padding: 3rem 1.5rem;
+  }
+
+  .promise-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .promise-text {
+    padding-right: 0;
+    order: 1;
+  }
+
+  .promise-image {
+    order: 2;
+  }
+
+  .promise-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .promise-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .promise-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .promise-list {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .promise-title {
+    font-size: 2rem;
+  }
+
+  .promise-subtitle {
+    font-size: 1rem;
+  }
+
+  .promise-description {
+    font-size: 0.95rem;
+  }
+
+  .promise-list li {
+    font-size: 1rem;
+  }
+}

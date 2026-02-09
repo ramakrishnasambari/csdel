@@ -1,0 +1,144 @@
+.our-mission {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mission-overlay {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-color: rgba(52, 63, 30, 0.9);
+  padding: 5rem 4rem;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.mission-title {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: #e3e9d8;
+}
+
+.mission-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  color: white;
+  text-align: left;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.mission-item {
+  text-align: left;
+}
+
+.mission-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.mission-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.mission-item h3 {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: white;
+  line-height: 1.3;
+}
+
+.mission-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e3e9d8;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .mission-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .our-mission {
+    background-attachment: scroll;
+  }
+
+  .mission-overlay {
+    padding: 3rem 1.5rem;
+  }
+
+  .mission-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .mission-subtitle {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mission-item {
+    text-align: center;
+  }
+
+  .mission-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .mission-subtitle {
+    font-size: 1rem;
+  }
+
+  .mission-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mission-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .mission-item p {
+    font-size: 0.95rem;
+  }
+}
