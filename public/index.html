@@ -1,17 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Council for Sustainability Development Environment and Livelihoods"
-    />
-    <title>CSDEL - Council for Sustainability Development Environment and Livelihoods</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELF | Sustainability, Environment & Livelihoods Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        :root {
+            --primary: #2d5a27; /* Forest Green */
+            --secondary: #4caf50; /* Leaf Green */
+            --dark: #333;
+            --light: #f9f9f9;
+            --accent: #e67e22; /* Earthy Orange */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: var(--dark); background-color: #fff; scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--primary); }
+        .nav-links { list-style: none; display: flex; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        #home {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1500&q=80') center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+        #home h1 { font-size: 3rem; margin-bottom: 1rem; }
+        #home p { max-width: 800px; font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn {
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn:hover { transform: translateY(-3px); opacity: 0.9; }
+
+        /* General Sections */
+        section { padding: 80px 10%; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        /* Cards */
+        .card { background: var(--light); padding: 30px; border-radius: 10px; border-top: 5px solid var(--primary); transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card i { font-size: 2rem; color: var(--secondary); margin-bottom: 15px; }
+
+        /* About Section */
+        #about { background: #f4f4f4; }
+        .mission-vision { display: flex; gap: 40px; margin-top: 40px; flex-wrap: wrap; }
+        .box { flex: 1; min-width: 300px; background: white; padding: 25px; border-radius: 8px; }
+
+        /* Projects */
+        .project-tag { display: inline-block; background: #eee; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 10px; }
+
+        /* Contact */
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        form button { background: var(--primary); color: white; border: none; padding: 12px 30px; cursor: pointer; border-radius: 5px; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 40px 0; margin-top: 40px; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .contact-container { grid-template-columns: 1fr; }
+            #home h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SELF</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#focus">Focus Areas</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>SELF – Sustainability, Environment & Livelihoods Forum</h1>
+        <p>Building resilient communities through sustainability, environmental stewardship, and inclusive livelihoods.</p>
+        <div>
+            <a href="#contact" class="btn btn-primary">Partner With Us</a>
+            <a href="#contact" class="btn btn-outline">Get Involved</a>
+        </div>
+    </header>
+
+    <section id="who-we-are">
+        <h2 class="section-title">Who We Are</h2>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <p>SELF is a not-for-profit organisation committed to advancing sustainable development by placing communities at the centre of change. We work at the intersection of people, planet, and progress.</p>
+            <br>
+            <div class="grid">
+                <div class="card"><i class="fas fa-leaf"></i><p>Protect and restore the environment</p></div>
+                <div class="card"><i class="fas fa-recycle"></i><p>Promote responsible practices</p></div>
+                <div class="card"><i class="fas fa-hands-helping"></i><p>Create inclusive livelihoods</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="focus" style="background: #fdfdfd;">
+        <h2 class="section-title">Our Focus Areas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Sustainability</h3>
+                <p>Encouraging responsible consumption, climate resilience, and long-term community planning to balance economic growth and social well-being.</p>
+            </div>
+            <div class="card">
+                <h3>Environment</h3>
+                <p>Protecting natural resources, strengthening biodiversity, and encouraging climate-positive actions through community participation.</p>
+            </div>
+            <div class="card">
+                <h3>Livelihoods</h3>
+                <p>Empowering women and youth through skill development and access to sustainable income-generation opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p style="text-align: center;">SELF was established with the belief that true development happens when environmental responsibility and livelihoods grow together.</p>
+        <div class="mission-vision">
+            <div class="box">
+                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                <p>A sustainable, equitable, and resilient future for all.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-rocket"></i> Our Mission</h3>
+                <p>To promote sustainability and strengthen livelihoods through community-led initiatives and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Our Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="project-tag">Focus: Environment</span>
+                <h3>Grassroots Reforestation</h3>
+                <p>Restoring local biodiversity through community-led planting drives.</p>
+                <p><strong>Location:</strong> District A | <strong>Status:</strong> Ongoing</p>
+            </div>
+            <div class="card">
+                <span class="project-tag">Focus: Livelihoods</span>
+                <h3>Youth Skill Lab</h3>
+                <p>Vocational training in sustainable crafts and digital literacy for rural youth.</p>
+                <p><strong>Location:</strong> District B | <strong>Status:</strong> Completed</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div>
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> info@self.org</p>
+                <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                <p><i class="fas fa-map-marker-alt"></i> India</p>
+                <br>
+                <h3>Get Involved</h3>
+                <p>Whether you want to <strong>Volunteer</strong>, <strong>Partner</strong>, or <strong>Support</strong> our work, we’d love to hear from you.</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SELF – Sustainability, Environment & Livelihoods Forum</p>
+        <p><small>Committed to people, planet, and progress.</small></p>
+    </footer>
+
+</body>
 </html>
