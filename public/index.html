@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="%PUBLIC_URL%/">
     <title>SELF | Sustainability, Environment & Livelihoods Forum</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="images/self-logo.png">
+    <link rel="shortcut icon" type="image/png" href="images/self-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Base Styles */
@@ -24,7 +24,7 @@
         /* Navigation */
         nav {
             background: #fff;
-            padding: 1rem 5%;
+            padding: 0.5rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -154,6 +154,10 @@
         .director-card i.user-icon { font-size: 3rem; color: var(--primary); margin-bottom: 15px; display: block; }
         .director-card a { color: var(--primary); font-weight: 600; text-decoration: none; }
         .director-card a:hover { text-decoration: underline; }
+        .director-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 15px; display: block; border: 3px solid var(--secondary); }
+        .director-initials { width: 120px; height: 120px; border-radius: 50%; background: #d4e2b0; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-size: 2rem; font-weight: 700; color: var(--primary); border: 3px solid var(--secondary); }
+        .director-linkedin { display: inline-flex; align-items: center; gap: 6px; color: #0077b5; font-weight: 600; text-decoration: none; margin-top: 10px; }
+        .director-linkedin:hover { text-decoration: underline; color: #005885; }
 
         /* Partners */
         #partners { background: #f4f4f4; }
@@ -216,7 +220,7 @@
 <body>
 
     <nav>
-        <div class="logo">SELF</div>
+        <div class="logo"><img src="images/self-logo.png" alt="SELF Logo" style="height:65px; width:auto; display:block;"></div>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
@@ -576,12 +580,25 @@
         <h2 class="section-title">About the Directors</h2>
         <div class="grid">
             <div class="director-card">
-                <i class="fas fa-user-tie user-icon"></i>
+                <img src="images/Rishu.jpg" alt="Rishu Garg" class="director-photo">
                 <h3>Rishu Garg</h3>
-                <p style="margin-bottom:16px;">Co-founder &amp; Director, SELF</p>
-                <a href="https://www.linkedin.com/in/rishu-garg" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin" style="font-size:1.5rem; margin-right:6px;"></i>View LinkedIn Profile
+                <p style="margin-bottom:12px;">Executive Director, SELF</p>
+                <a href="https://www.linkedin.com/in/rishu-garg-01359613a/" target="_blank" rel="noopener noreferrer" class="director-linkedin">
+                    <i class="fab fa-linkedin" style="font-size:1.3rem;"></i>LinkedIn Profile
                 </a>
+            </div>
+            <div class="director-card">
+                <img src="images/piyusha.png" alt="Dr. Piyusha Tiwari" class="director-photo">
+                <h3>Dr. Piyusha Tiwari</h3>
+                <p style="margin-bottom:12px;">Director, SELF</p>
+                <a href="https://www.linkedin.com/in/dr-piyusha-tiwari-9b36a736a/" target="_blank" rel="noopener noreferrer" class="director-linkedin">
+                    <i class="fab fa-linkedin" style="font-size:1.3rem;"></i>LinkedIn Profile
+                </a>
+            </div>
+            <div class="director-card">
+                <div class="director-initials">PD</div>
+                <h3>Priyank Dube</h3>
+                <p style="margin-bottom:12px;">Director Communications, SELF</p>
             </div>
         </div>
     </section>
