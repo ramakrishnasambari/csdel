@@ -163,10 +163,7 @@
 
         /* Partners */
         #partners { background: #f4f4f4; }
-        .partners-slider-wrap { overflow: hidden; margin-top: 20px; margin-left: -10%; margin-right: -10%; position: relative; }
-        .partners-slider-wrap::before, .partners-slider-wrap::after { content: ''; position: absolute; top: 0; height: 100%; width: 120px; z-index: 2; pointer-events: none; }
-        .partners-slider-wrap::before { left: 0; background: linear-gradient(to right, #f4f4f4 0%, transparent 100%); }
-        .partners-slider-wrap::after { right: 0; background: linear-gradient(to left, #f4f4f4 0%, transparent 100%); }
+        .partners-slider-wrap { overflow: hidden; margin-top: 20px; margin-left: -10%; margin-right: -10%; }
         .partners-track { display: flex; width: max-content; animation: partnersScroll 35s linear infinite; }
         .partners-track:hover { animation-play-state: paused; }
         @keyframes partnersScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
