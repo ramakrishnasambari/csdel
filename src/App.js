@@ -7,6 +7,7 @@ import OurMission from './components/OurMission';
 import OurPromise from './components/OurPromise';
 import WhatWeDo from './components/WhatWeDo';
 import OurTeam from './components/OurTeam';
+import OurProjects from './components/OurProjects';
 import OurPartners from './components/OurPartners';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ function App() {
         <WhatWeDo />
         <OurPromise />
         <OurTeam />
+        <OurProjects />
         <OurPartners />
         <Contact />
       </main>

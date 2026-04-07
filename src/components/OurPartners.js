@@ -7,7 +7,16 @@ const OurPartners = () => {
     { name: 'Polystack', logo: 'pt2.svg' },
     { name: 'Edge 2 Systems', logo: 'pt3.svg' },
     { name: 'Quantum Hub', logo: 'pt4.png' },
-    { name: 'Magenta', logo: 'pt5.png' }
+    { name: 'Magenta', logo: 'pt5.png' },
+    { name: 'Krimanshi', logo: 'partners/partner-krimanshi.png' },
+    { name: 'Magenta Foundation', logo: 'partners/partner-magenta.png' },
+    { name: 'Partner', logo: 'partners/partner-3.png' },
+    { name: 'DAANG Vikas Sansthan', logo: 'partners/DAANG Vikas Sansthan.png' },
+    { name: 'KRIPAVIS', logo: 'partners/KRIPAVIS.png' },
+    { name: 'Lok Kalyan Santhan', logo: 'partners/Lok Kalyan Santhan.png' },
+    { name: 'Prayatna', logo: 'partners/prayatna-logo.png' },
+    { name: 'RMKM', logo: 'partners/RMKM.png' },
+    { name: 'Partner', logo: 'partners/Screenshot 2026-04-06 191737.png' }
   ];
 
   return (
