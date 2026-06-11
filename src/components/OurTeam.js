@@ -10,12 +10,6 @@ const OurTeam = () => {
       linkedin: 'https://www.linkedin.com/in/rishu-garg-01359613a/'
     },
     {
-      name: 'Dr. Piyusha Tiwari',
-      position: 'Director',
-      image: 'piyusha.png',
-      linkedin: 'https://www.linkedin.com/in/dr-piyusha-tiwari-9b36a736a/'
-    },
-    {
       name: 'Priyank Dube',
       position: 'Director Communications, SELF',
       image: null
